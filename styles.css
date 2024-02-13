@@ -1,0 +1,28 @@
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 1.5s;
+}
+
+.img-small {
+    width: 30%; /* Adjust the width as needed */
+}
+
+.container {
+    text-align: center;
+}
+.header_text {
+    margin: 10px 0;
+}
+.media_container {
+    text-align: center;
+}
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

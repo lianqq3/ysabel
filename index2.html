@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <title>Ysamelon</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Hi po Ysamelon!</h1>
+            <h1 class="header_text">Pwede ka po ba maging Valentines?</h1>
+        </div>
+
+        <div class="media_container">
+            <div class="video">
+                <div class="gif">
+                    <img src="0213.gif" alt="GIF Example ">
+                </div>
+            </div>
+            <a>bawal na mag no hehe</a>
+
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()">YES</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">NO</button>
+            </div>
+        </div>
+    </div>
+    <video width="440" height="260" controls autoplay>
+        <source src="meme.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+        }
+
+        // // Function to show the video after some time
+        // function showVideo() {
+        //     var video = document.querySelector('.video1 video'); // Select the video element
+        //     document.querySelector('.video1').style.display = 'block';
+        //     video.setAttribute('autoplay', true); // Add autoplay attribute
+        // }
+        // setTimeout(showVideo, 100);
+    </script>
+</body>
+</html>
